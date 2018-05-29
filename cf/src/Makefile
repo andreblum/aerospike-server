@@ -17,8 +17,10 @@ SOURCES += alloc.c arenax.c cf_mutex.c cf_str.c daemon.c dynbuf.c fault.c hardwa
 SOURCES += hist.c hist_track.c linear_hist.c meminfo.c msg.c node.c olock.c
 SOURCES += rchash.c shash.c socket.c vmapx.c
 ifneq ($(USE_EE),1)
-  SOURCES += arenax_ce.c socket_ce.c tls_ce.c
+#   SOURCES += arenax_ce.c socket_ce.c tls_ce.c
+   SOURCES += arenax_ce.c socket_av.c tls_ce.c
 endif
+
 
 LIBRARY = $(LIBRARY_DIR)/libcf.a
 
